@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Customer Survey Form</title>
+    </head>
+    <body>
+        <form id="eventRegistrationForm" action="#">
+            <h1>Customer Survey Form</h1>
+            <!-- Additional form elements will be added here -->
+            <div class="input-infor">
+                <div class="input-group-name">
+                    <p>What is your name?</p>
+                    <label for="userName">User Name:</label>
+                    <input type="text"   placeholder="Enter Your Name" id="userName" name="userName">
+                </div>
+
+                <div class="input-group-birth">
+                    <p>What is your Birth date?</p>
+                    <label for="userBirthDate">Birth date:</label>
+                    <input type="date"   id="userBirthDate" name="userBirthDate">
+                </div>
+
+                <div class="input-group-email">
+                    <p>What is your email address?</p>
+                    <label for="userEmail">Email:</label>
+                    <input type="email"  placeholder="Enter Your Email" id="userEmail" name="userEmail">
+                </div>
+
+                <div class="input-group-phone">
+                    <p>What is your phone number?</p>
+                    <label for="phoneNumber">Tel:</label>
+                    <input type="tel" placeholder="(222)222-2222" id="phoneNumber" name="phoneNumber">
+                </div> 
+
+                <div class="input-group-livecity">
+                    <p>Which city do you live in Canada?</p>
+                    <label for="liveCity">City: </label>
+                    <input type="text"   name="liveCity"  list="liveCity"   placeholder="select the city">
+                    <datalist name="city" id="liveCity"></datalist>
+                </div> 
+
+                <div class="input-group-items">
+                    <p>What is your fovarite item?</p>
+                    <label for="fovariteItem">Fovarite item:</label>
+                    <input type="text" name="fovariteItem"  list="fovariteItem"   placeholder="select fovarite item">
+                    <datalist name="fovariteItem"  id="fovariteItem"></datalist>
+                </div> 
+
+                <div class="input-group-improvement">
+                    <p>What do you think we need to improve?</p>
+                    <label for="improvement">Improvement: </label>
+                    <input type="text"  name="improvement" list="improvement">
+                    <datalist name="improvement" id="improvement"></datalist>
+                </div> 
+
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
