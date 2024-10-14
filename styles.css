@@ -44,10 +44,10 @@ button:hover {
     background-color: #005f73;
 }
 
-.input-infor{
+.input-group{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:40px;
+    grid-gap:40px; 
     align-items: center;
     padding-right: 20px;
     font-size: 12px;
@@ -58,8 +58,19 @@ button:hover {
 .input-group-phone, .input-group-livecity, .input-group-items,
 .input-group-improvement{
     height: 130px;
+    display: inline-block;
 }
 
 p{
     font-size: 15px;
+}
+
+p.error-message{
+    font-size: 12px;
+    color: red;
+    margin: 0px;
+}
+
+.end{
+    display: none;
 }

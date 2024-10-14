@@ -7,14 +7,14 @@
         <title>Customer Survey Form</title>
     </head>
     <body>
-        <form id="eventRegistrationForm" action="#">
+        <form id="customerSurveyForm" action="#">
             <h1>Customer Survey Form</h1>
             <!-- Additional form elements will be added here -->
-            <div class="input-infor">
+            <div class="input-group">
                 <div class="input-group-name">
                     <p>What is your name?</p>
                     <label for="userName">User Name:</label>
-                    <input type="text"   placeholder="Enter Your Name" id="userName" name="userName">
+                    <input type="text"  placeholder="Enter Your Name" id="userName" name="userName">
                 </div>
 
                 <div class="input-group-birth">
@@ -38,27 +38,50 @@
                 <div class="input-group-livecity">
                     <p>Which city do you live in Canada?</p>
                     <label for="liveCity">City: </label>
-                    <input type="text"   name="liveCity"  list="liveCity"   placeholder="select the city">
-                    <datalist name="city" id="liveCity"></datalist>
+                    <select name="liveCity">
+                        <option value="">Select your city</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="halifax">Halifax</option>
+                        <option value="winnipeg">Winnipeg</option>
+                        <option value="quebec">Quebec</option>
+                        <option value="ottawa">Ottawa</option>
+                        <option value="victoria">Victoria</option>  
+                    </select>
                 </div> 
 
-                <div class="input-group-items">
+                <div class="input-group-item">
                     <p>What is your fovarite item?</p>
                     <label for="fovariteItem">Fovarite item:</label>
-                    <input type="text" name="fovariteItem"  list="fovariteItem"   placeholder="select fovarite item">
-                    <datalist name="fovariteItem"  id="fovariteItem"></datalist>
+                    <select name="fovariteItem">
+                        <option value="">Select your fovarite item</option>
+                        <option value="skirt">Skirt</option>
+                        <option value="shirt">Shirt</option>
+                        <option value="jacket">Jacket</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="blouse">Blouse</option>
+                        <option value="pants">Pants</option>
+                    </select>
                 </div> 
 
                 <div class="input-group-improvement">
                     <p>What do you think we need to improve?</p>
                     <label for="improvement">Improvement: </label>
-                    <input type="text"  name="improvement" list="improvement">
-                    <datalist name="improvement" id="improvement"></datalist>
+                    <select  name="improvement" >
+                        <option value="">Select the inmprovement</option>
+                        <option value="service">Service</option>
+                        <option value="design">Design</option>
+                        <option value="quantity">Quantity</option>
+                        <option value="quality">Quality</option>
+                    </select>    
                 </div> 
 
             </div>
             <button type="submit">Submit</button>
         </form>
+        <div class="end">
+            Thank You!
+            <a href="index.html">Home</a>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
