@@ -66,7 +66,7 @@ formNode.addEventListener("submit",(event) => {
     if(validateUserName() && validateBirthDate() && validateUserEmail() 
         && validatePhoneNumber() && validateCity() && validateFovariteItem() 
         && validateImprovement()){
-        endNode.style.display = "block";
+        endNode.style.display = "flex";
         formNode.style.display = "none";
     }
 });
