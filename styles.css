@@ -11,8 +11,8 @@ body {
 }
 
 form {
-    width: 90%;
-    max-width: 31.25em;
+    width: 95%;
+    max-width: 48.25em;
     background: white;
     padding: 1.25em;
     border-radius: 0.5em;
@@ -24,13 +24,21 @@ input,
 select,
 textarea {
     width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
     padding: 0.625em;
     margin-top: 0.3125em;
     margin-bottom: 0.9375em;
     border: 1px solid #ddd;
     border-radius: 0.25em;
+    appearance: none;
 }
 
+label{
+    width:100px;
+    display: inline-block;
+    text-align: right;
+}
 button {
     padding: 0.625em 1.25em;
     background-color: #008cba;
@@ -54,11 +62,13 @@ button:hover {
 
 }
 
+
 .input-group-name, .input-group-birth, .input-group-email,
 .input-group-phone, .input-group-livecity, .input-group-items,
 .input-group-improvement{
     height: 130px;
-    display: inline-block;
+    width: 100%;
+    align-items: flex-start;
 }
 
 p{

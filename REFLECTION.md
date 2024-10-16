@@ -15,3 +15,7 @@ https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-i
 
 how to set  phonenumber regex pattern
 https://stackoverflow.com/questions/26211225/validating-phone-numbers-using-javascript
+
+
+how to remove element in html by js
+https://www.w3schools.com/jsref/met_element_remove.asp
