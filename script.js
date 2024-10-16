@@ -201,3 +201,8 @@ function escapeHTML(input) {
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
 }
+
+// click home button then back to the form
+document.querySelector("#homeButton").onclick = (() => {
+    location.href = "index.html";
+});

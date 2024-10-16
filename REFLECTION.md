@@ -1,3 +1,7 @@
+
+
+
+
 how to show input box in select options：
 https://stackoverflow.com/questions/57319845/is-there-a-way-to-show-input-box-in-select-options-so-i-can-add-a-value-in-optio
 
@@ -19,3 +23,6 @@ https://stackoverflow.com/questions/26211225/validating-phone-numbers-using-java
 
 how to remove element in html by js
 https://www.w3schools.com/jsref/met_element_remove.asp
+
+click the button then go to another page
+https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
