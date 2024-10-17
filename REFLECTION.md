@@ -33,5 +33,8 @@ From this project, I learned how to implement a dropdown menu for a list of choi
 - how to make radio button:
   https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio
 
+- how to create group checkbox and Use semantic HTML tags like fieldset and legend for grouping related inputs
+  https://stackoverflow.com/questions/61420247/can-we-group-the-check-box-in-html
+
 - how to valide radio button:
   https://stackoverflow.com/questions/10339073/how-to-validate-radio-button-using-javascript
