@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css"/>
         <title>Customer Survey Form</title>
     </head>
     <body>
@@ -37,16 +37,19 @@
 
                 <div class="input-group-livecity">
                     <p>Which city do you live in Canada?</p>
-                    <label for="liveCity">City: </label>
-                    <select name="liveCity">
-                        <option value="">Select your city</option>
-                        <option value="toronto">Toronto</option>
-                        <option value="halifax">Halifax</option>
-                        <option value="winnipeg">Winnipeg</option>
-                        <option value="quebec">Quebec</option>
-                        <option value="ottawa">Ottawa</option>
-                        <option value="victoria">Victoria</option>  
-                    </select>
+                    <div class = "group-radioes">
+                        <label for="toronto">Toronto</label>
+                        <input type="radio" name="city" id="toronto" value="toront">
+
+                        <label for="ottawa">Ottawa</label>
+                        <input type="radio" name="city" id="ottawa" value="ottawa">  
+
+                        <label for="winnipeg">Winnipeg </label>
+                        <input type="radio" name="city" id="winnipeg" value="winnipeg">
+                        
+                        <label for="victoria">Victoria</label> 
+                        <input type="radio" name="city" id="victoria" value="victoria">
+                    </div>
                 </div> 
 
                 <div class="input-group-item">
@@ -62,18 +65,23 @@
                         <option value="pants">Pants</option>
                     </select>
                 </div> 
-
+            
                 <div class="input-group-improvement">
                     <p>What do you think we need to improve?</p>
-                    <label for="improvement">Improvement: </label>
-                    <select  name="improvement" >
-                        <option value="">Select the inmprovement</option>
-                        <option value="service">Service</option>
-                        <option value="design">Design</option>
-                        <option value="quantity">Quantity</option>
-                        <option value="quality">Quality</option>
-                    </select>    
-                </div> 
+                    <div class ="group-checkboxs"> 
+                        <label for="service">Service</label>
+                        <input type="checkbox" id="service" name="improvement" value="service">
+                        
+                        <label for="design">Design</label>
+                        <input type="checkbox" id="design" name="improvement" value="design">
+                        
+                        <label for="quantity">Quantity</label>
+                        <input type="checkbox" id="quantity" name="improvement" value="quantity">
+                        
+                        <label for="quality">Quality</label>
+                        <input type="checkbox" id="quality" name="improvement" value="quality">
+                    </div>
+                </div>
             </div>
             <button type="submit">Submit</button>
         </form>
@@ -81,6 +89,6 @@
             <p>Thank You!</p>
             <button id="homeButton">Home</button>
         </div>
-        <script src="script.js"></script>
+        <script src="script.js"></script> 
     </body>
 </html>

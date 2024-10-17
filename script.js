@@ -162,11 +162,14 @@ function validatePhoneNumber(){
 
 // validate city
 function validateCity(){
-    if(liveCityNode.value ===""){
-        cityErrorMessage = "The city is required"
-        return false;
+    const cityRadioes = document.querySelectorAll('input[name = "city"]');
+    for(let i=0; i<cityRadioes.length; i++){
+        if(cityRadioes[i].checked){  
+            return true;
+        }
     }
-    return true;
+    cityErrorMessage = "The city is required";
+    return false;     
 }
 
 // validate fovarite item
@@ -180,13 +183,19 @@ function validateFovariteItem(){
 }
 
 // validate improvement
-function validateImprovement(){
-    if(improvementimputNode.value === ""){
-        improvementErrorMessage = "Improvement is required";
-        return false;
+function validateImprovement() {
+    // Get all checkboxes with name 'improvement'
+    const improvementCheckboxes = document.querySelectorAll('input[name="improvement"]');
+    for(let i =0; i<improvementCheckboxes.length; i++){
+        if(improvementCheckboxes[i].checked){
+            return true;
+        }
     }
-    return true;
+    improvementErrorMessage = "At least one improvement must be selected";
+    return false;
 }
+
+
 
 
 function escapeHTML(input) {

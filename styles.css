@@ -26,12 +26,12 @@ textarea {
     width: 100%;
     max-width: 200px;
     box-sizing: border-box;
-    padding: 0.625em;
-    margin-top: 0.3125em;
-    margin-bottom: 0.9375em;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 0.25em;
-    appearance: none;
+
 }
 
 label{
@@ -40,7 +40,7 @@ label{
     text-align: right;
 }
 button {
-    padding: 0.625em 1.25em;
+    padding: 5px 5px;
     background-color: #008cba;
     color: white;
     border: none;
@@ -56,20 +56,75 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:40px; 
-    align-items: center;
     padding-right: 20px;
     font-size: 12px;
 
 }
-
 
 .input-group-name, .input-group-birth, .input-group-email,
 .input-group-phone, .input-group-livecity, .input-group-items,
 .input-group-improvement{
     height: 130px;
     width: 100%;
-    align-items: flex-start;
+    align-items: center; 
 }
+
+
+
+
+.input-group-improvement{
+    grid-column: 1 / span 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.group-radioes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    text-align: center;
+    
+}
+
+.group-radioes label{
+    width:28px;
+    margin-right:18px;
+    text-align: right;
+}
+
+.group-radioes input{
+    width: 30px;
+}
+
+
+
+.group-checkboxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-checkboxs label{
+    width: auto;
+    text-align: right;
+}
+
+.group-checkboxs input{
+    width: 30px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+
+
+
+
 
 p{
     font-size: 15px;
@@ -78,15 +133,16 @@ p{
 p.error-message{
     font-size: 12px;
     color: red;
-    margin: 0px;
+    margin: 5px;
 }
+
+
 
 .end{
     display: none;
     align-items: center;
     flex-direction: column; 
     align-items: center; 
-    justify-content: center;
 }
 
 .end p{
