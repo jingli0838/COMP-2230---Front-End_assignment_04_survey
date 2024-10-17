@@ -4,9 +4,7 @@ const userNameNode = formNode.elements["userName"];
 const birthDateInputNode = formNode.elements["userBirthDate"];
 const emailInputNode = formNode.elements["userEmail"];
 const phoneNumberNode = formNode.elements["phoneNumber"];
-const liveCityNode = formNode.elements["liveCity"];
 const fovariteItemNode = formNode.elements["fovariteItem"];
-const improvementimputNode = formNode.elements["improvement"];
 
 const inputGroupNameNode = document.querySelector(".input-group-name");
 const inputGroupbirthNode = document.querySelector(".input-group-birth");
