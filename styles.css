@@ -5,19 +5,23 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-form {
-    width: 95%;
-    max-width: 48.25em;
-    background: white;
-    padding: 1.25em;
-    border-radius: 0.5em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#content-container {
+    margin-top: 30px;
     text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 5px 20px 20px 20px;
+    box-shadow: 0px 2px 7px #7e7e7e;
+    border-radius: 10px;
 }
 
 input,
@@ -41,9 +45,9 @@ label{
 }
 button {
     padding: 5px 5px;
-    background-color: #008cba;
-    color: white;
-    border: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black ;
     border-radius: 0.3125em;
     cursor: pointer;
 }
@@ -67,6 +71,7 @@ button:hover {
     height: 130px;
     width: 100%;
     align-items: center; 
+    text-align: center;
 }
 
 
@@ -87,7 +92,8 @@ button:hover {
     flex-wrap: wrap;
     align-items: center; 
     text-align: center;
-    
+    gap: 10px;
+    padding: 10px;
 }
 
 .group-radioes label{
@@ -99,9 +105,6 @@ button:hover {
 .group-radioes input{
     width: 30px;
 }
-
-
-
 .group-checkboxs {
     padding:0px;
     display: flex;
@@ -141,7 +144,7 @@ p, legend{
 
 p.error-message{
     font-size: 12px;
-    color: red;
+    color: #92022f;
     margin: 5px;
 }
 
@@ -157,4 +160,11 @@ p.error-message{
 .end p{
     font-size: 20px;
     font-style: bold;
+}
+
+@media only screen and (max-width: 600px)  {
+    .input-group{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

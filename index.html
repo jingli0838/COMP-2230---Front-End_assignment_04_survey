@@ -7,84 +7,86 @@
         <title>Customer Survey Form</title>
     </head>
     <body>
-        <form id="customerSurveyForm" action="#">
-            <h1>Customer Survey Form</h1>
-            <!-- Additional form elements will be added here -->
-            <div class="input-group">
-                <div class="input-group-name">
-                    <p>What is your name?</p>
-                    <label for="userName">User Name:</label>
-                    <input type="text"  placeholder="Enter Your Name" id="userName" name="userName">
+        <main id="content-container">
+            <form id="customerSurveyForm" >
+                <h1>Customer Survey Form</h1>
+                <!-- Additional form elements will be added here -->
+                <div class="input-group">
+                    <fieldset class="input-group-name">
+                        <legend>What is your name?</legend>
+                        <label for="userName">User Name:</label>
+                        <input type="text"  placeholder="Enter Your Name" id="userName" name="userName">
+                    </fieldset>
+
+                    <fieldset class="input-group-birth">
+                        <legend>What is your Birth date?</legend>
+                        <label for="userBirthDate">Birth date:</label>
+                        <input type="date"   id="userBirthDate" name="userBirthDate">
+                    </fieldset>
+
+                    <fieldset class="input-group-email">
+                        <legend>What is your email address?</legend>
+                        <label for="userEmail">Email:</label>
+                        <input type="email"  placeholder="Enter Your Email" id="userEmail" name="userEmail">
+                    </fieldset>
+
+                    <fieldset class="input-group-phone">
+                        <legend>What is your phone number?</legend>
+                        <label for="phoneNumber">Tel:</label>
+                        <input type="tel" placeholder="(222)222-2222" id="phoneNumber" name="phoneNumber">
+                    </fieldset> 
+
+                    <fieldset class="input-group-livecity">
+                        <legend>Which city do you live in Canada?</legend>
+                        <div class = "group-radioes">
+                            <label for="toronto">Toronto</label>
+                            <input type="radio" name="city" id="toronto" value="toronto">
+
+                            <label for="ottawa">Ottawa</label>
+                            <input type="radio" name="city" id="ottawa" value="ottawa">  
+
+                            <label for="winnipeg">Winnipeg </label>
+                            <input type="radio" name="city" id="winnipeg" value="winnipeg">
+
+                            <label for="victoria">Victoria</label> 
+                            <input type="radio" name="city" id="victoria" value="victoria">
+                        </div>
+                    </fieldset> 
+
+                    <fieldset class="input-group-item">
+                        <legend>What is your fovarite item?</legend>
+                        <label for="fovariteItem">Favorite item:</label>
+                        <select name="fovariteItem" id="fovariteItem">
+                            <option value="">Select your fovarite item</option>
+                            <option value="skirt">Skirt</option>
+                            <option value="shirt">Shirt</option>
+                            <option value="jacket">Jacket</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="blouse">Blouse</option>
+                            <option value="pants">Pants</option>
+                        </select>
+                    </fieldset> 
+                
+                    <fieldset class="input-group-improvement">
+                        <legend>What do you think we need to improve?</legend>
+                        <div class ="group-checkboxs"> 
+                            <label for="service">Service</label>
+                            <input type="checkbox" id="service" name="improvement" value="service">
+                            
+                            <label for="design">Design</label>
+                            <input type="checkbox" id="design" name="improvement" value="design">
+                            
+                            <label for="quantity">Quantity</label>
+                            <input type="checkbox" id="quantity" name="improvement" value="quantity">
+                            
+                            <label for="quality">Quality</label>
+                            <input type="checkbox" id="quality" name="improvement" value="quality">
+                        </div>
+                    </fieldset>
                 </div>
-
-                <div class="input-group-birth">
-                    <p>What is your Birth date?</p>
-                    <label for="userBirthDate">Birth date:</label>
-                    <input type="date"   id="userBirthDate" name="userBirthDate">
-                </div>
-
-                <div class="input-group-email">
-                    <p>What is your email address?</p>
-                    <label for="userEmail">Email:</label>
-                    <input type="email"  placeholder="Enter Your Email" id="userEmail" name="userEmail">
-                </div>
-
-                <div class="input-group-phone">
-                    <p>What is your phone number?</p>
-                    <label for="phoneNumber">Tel:</label>
-                    <input type="tel" placeholder="(222)222-2222" id="phoneNumber" name="phoneNumber">
-                </div> 
-
-                <div class="input-group-livecity">
-                    <p>Which city do you live in Canada?</p>
-                    <div class = "group-radioes">
-                        <label for="toronto">Toronto</label>
-                        <input type="radio" name="city" id="toronto" value="toront">
-
-                        <label for="ottawa">Ottawa</label>
-                        <input type="radio" name="city" id="ottawa" value="ottawa">  
-
-                        <label for="winnipeg">Winnipeg </label>
-                        <input type="radio" name="city" id="winnipeg" value="winnipeg">
-
-                        <label for="victoria">Victoria</label> 
-                        <input type="radio" name="city" id="victoria" value="victoria">
-                    </div>
-                </div> 
-
-                <div class="input-group-item">
-                    <p>What is your fovarite item?</p>
-                    <label for="fovariteItem">Fovarite item:</label>
-                    <select name="fovariteItem">
-                        <option value="">Select your fovarite item</option>
-                        <option value="skirt">Skirt</option>
-                        <option value="shirt">Shirt</option>
-                        <option value="jacket">Jacket</option>
-                        <option value="shoes">Shoes</option>
-                        <option value="blouse">Blouse</option>
-                        <option value="pants">Pants</option>
-                    </select>
-                </div> 
-            
-                <fieldset class="input-group-improvement">
-                    <legend>What do you think we need to improve?</legend>
-                    <div class ="group-checkboxs"> 
-                        <label for="service">Service</label>
-                        <input type="checkbox" id="service" name="improvement" value="service">
-                        
-                        <label for="design">Design</label>
-                        <input type="checkbox" id="design" name="improvement" value="design">
-                        
-                        <label for="quantity">Quantity</label>
-                        <input type="checkbox" id="quantity" name="improvement" value="quantity">
-                        
-                        <label for="quality">Quality</label>
-                        <input type="checkbox" id="quality" name="improvement" value="quality">
-                    </div>
-                </fieldset>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
         <div class="end">
             <p>Thank You!</p>
             <button id="homeButton">Home</button>

@@ -1,6 +1,20 @@
 ## Reflection
-This project is aiming to create a servey form, with multiple questions.
-From this project, I learned how to implement a dropdown menu for a list of choices and get familiar with arrow functions. and alse knew how to calculate age according to the date string from the input. I also learned how to add radio button group for a single-choice question and checkbox group for multiple selections and searched how to use 'checked' to validate radio button and checkbox button.
+### Can I explain what my code does?
+- The customer survey form is processed and validated by this project. It makes that every field satisfies certain requirements before to submission, shows error messages for incorrect inputs, and conceals the form after submission is successful. It also makes use of accessible code techniques to guarantee assistive technology compatibility.
+## What was my coding process?
+- First strucutured the html file. 
+- Then wrote validation functions for each field
+- Next，added error message handling to display errors accordingly.
+- Used event listeners to intercept and process the form submission dynamically.
+- Tested individual functions for different part
+- Added the design code
+- At last, check the semantic errors in the html, fixed them. used ax DevTools to make sure there is no error. and added responsive design.
+
+### What challenges did I have?
+- I was so confusing about What responsive design. but after these all assignment, now I can figure out the main elemens we need to adjust according to different screen size.
+
+### What would I do differently now?
+- I would still focuse on the requirement. and also practice more. 
 
 
 
